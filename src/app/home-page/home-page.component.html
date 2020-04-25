@@ -1,11 +1,49 @@
 <nb-layout>
-    <nb-layout-header fixed>
-        <img src="assets/image/tablesa.svg">
+    <nb-layout-header>
+    <button nbButton status="success" size="tiny" (click)="toggle()">Abrir</button>
+    <button nbButton size="tiny" status="info" (click)="toggleCompact()">Cerrar</button>
     </nb-layout-header>
-
-    <nb-sidebar>Sidebar Content</nb-sidebar>
+    <nb-sidebar>
+      <nb-accordion multi>
+        <nb-accordion-item>
+          <nb-accordion-item-header>
+            Product Details
+          </nb-accordion-item-header>
+          <nb-accordion-item-body>
+            A nebula is an interstellar cloud of dust, hydrogen, helium and other ionized gases.
+            Originally, nebula was a name for any diffuse astronomical object,
+            including galaxies beyond the Milky Way.
+          </nb-accordion-item-body>
+        </nb-accordion-item>
+      
+        <nb-accordion-item>
+          <nb-accordion-item-header>
+            Reviews
+          </nb-accordion-item-header>
+          <nb-accordion-item-body>
+            A nebula is an interstellar cloud of dust, hydrogen, helium and other ionized gases.
+            Originally, nebula was a name for any diffuse astronomical object,
+            including galaxies beyond the Milky Way.
+          </nb-accordion-item-body>
+        </nb-accordion-item>
+      
+        <nb-accordion-item>
+          <nb-accordion-item-header>
+            Edit
+          </nb-accordion-item-header>
+          <nb-accordion-item-body>
+            A nebula is an interstellar cloud of dust, hydrogen, helium and other ionized gases.
+            Originally, nebula was a name for any diffuse astronomical object,
+            including galaxies beyond the Milky Way.
+          </nb-accordion-item-body>
+        </nb-accordion-item>
+      </nb-accordion>
+    </nb-sidebar>
 
     <nb-layout-column>
       Page Content <button nbButton>Hello World</button>
     </nb-layout-column>
+    <nb-layout-footer fixed>
+     <p>Copyrights ©TABLESA S.A by TeamSoft</p>
+    </nb-layout-footer>
 </nb-layout>

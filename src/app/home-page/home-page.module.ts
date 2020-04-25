@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HomePageComponent } from './home-page.component';
 import { RouterModule } from '@angular/router';
-import { NbLayoutModule, NbSidebarModule, NbButtonModule } from '@nebular/theme';
+import { NbLayoutModule, NbSidebarModule, NbButtonModule, NbAccordionModule } from '@nebular/theme';
 
 @NgModule({
   declarations: [HomePageComponent],
@@ -12,6 +12,7 @@ import { NbLayoutModule, NbSidebarModule, NbButtonModule } from '@nebular/theme'
     NbLayoutModule,
     NbSidebarModule, // NbSidebarModule.forRoot(), //if this is your app.module
     NbButtonModule,
+    NbAccordionModule,
   ],
   exports:[
     HomePageComponent,
